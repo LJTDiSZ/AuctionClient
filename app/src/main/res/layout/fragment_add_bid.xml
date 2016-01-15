@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jcc.auctionclient.AddBidFragment">
+
+    <TableLayout android:stretchColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/label_font_size" android:gravity="center"
+            android:padding="@dimen/title_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_detail_title" />
+        <TableRow>
+            <TextView android:text="@string/item_name" android:textSize="@dimen/label_font_size"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/itemName" style="@style/tv_show"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/item_desc" android:textSize="@dimen/label_font_size"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/itemDesc" style="@style/tv_show"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/remark" android:textSize="@dimen/label_font_size"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/itemRemark" style="@style/tv_show"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/item_kind" android:textSize="@dimen/label_font_size"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/itemKind" style="@style/tv_show"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/init_price" android:textSize="@dimen/label_font_size"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/initPrice" style="@style/tv_show"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/max_price" android:textSize="@dimen/label_font_size"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/maxPrice" style="@style/tv_show"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/end_time" android:textSize="@dimen/label_font_size"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/endTime" style="@style/tv_show"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/you_bid" android:textSize="@dimen/label_font_size"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/bidPrice" android:inputType="numberDecimal"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+            <Button android:id="@+id/bnAdd" android:text="@string/bid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button android:id="@+id/bnCancel" android:text="@string/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </TableLayout>
+
+</ScrollView>

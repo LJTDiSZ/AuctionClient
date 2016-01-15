@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jcc.auctionclient.AuctionListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:id="@+id/TextView"
+        android:textSize="@dimen/label_font_size"
+        android:gravity="center"
+        android:padding="@dimen/title_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome" />
+
+    <ListView android:id="@+id/auction_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:entries="@array/auction_list"></ListView>
+
+</LinearLayout>

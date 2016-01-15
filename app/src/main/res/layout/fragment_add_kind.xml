@@ -1,0 +1,36 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context="com.jcc.auctionclient.AddKindFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:textSize="@dimen/label_font_size" android:gravity="center" android:padding="@dimen/title_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_kind_title" />
+
+    <TableRow>
+        <TextView android:text="@string/kind_name" android:textSize="@dimen/label_font_size"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/kindName" android:inputType="text"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/kind_desc" android:textSize="@dimen/label_font_size"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/kindDesc" android:inputType="text"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button android:id="@+id/bnAdd" android:text="@string/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button android:id="@+id/bnCancel" android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</TableLayout>
